@@ -1,0 +1,18 @@
+ОТЧЕТ О КЛАССИФИКАЦИИ
+======================================================================
+
+                 precision    recall  f1-score   support
+
+answer_feedback       0.78      0.64      0.70        72
+     difficulty       0.92      0.85      0.88       115
+        goodbye       0.55      0.90      0.68        92
+       greeting       0.77      0.85      0.81       160
+           help       0.89      0.77      0.82        94
+    repeat_quiz       0.88      0.78      0.83        67
+     start_quiz       0.89      0.90      0.90       155
+     statistics       0.96      0.78      0.86       101
+        unknown       0.97      0.67      0.79        54
+
+       accuracy                           0.82       910
+      macro avg       0.85      0.79      0.81       910
+   weighted avg       0.84      0.82      0.82       910

@@ -1,0 +1,263 @@
+2025-12-25 19:25:42 - IntentClassifier - INFO - Логирование настроено. Логи будут записываться в: training_logs/training_20251225_192542.log
+2025-12-25 19:25:42 - IntentClassifier - INFO - Запуск программы: 2025-12-25 19:25:42
+2025-12-25 19:25:42 - IntentClassifier - INFO - Текущий лог-файл: training_logs/training_20251225_192542.log
+2025-12-25 19:25:50 - IntentClassifier - INFO - ======================================================================
+2025-12-25 19:25:50 - IntentClassifier - INFO - ОБУЧЕНИЕ НЕЙРОСЕТИ ДЛЯ КЛАССИФИКАЦИИ НАМЕРЕНИЙ
+2025-12-25 19:25:50 - IntentClassifier - INFO - ======================================================================
+2025-12-25 19:25:50 - IntentClassifier - INFO - Загрузка данных из extended_intents.json...
+2025-12-25 19:25:50 - IntentClassifier - INFO - Загружено 4550 примеров, 9 классов
+2025-12-25 19:25:51 - IntentClassifier - INFO - Классы: ['answer_feedback', 'difficulty', 'goodbye', 'greeting', 'help', 'repeat_quiz', 'start_quiz', 'statistics', 'unknown']
+2025-12-25 19:25:51 - IntentClassifier - INFO - 
+Пример данных:
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Текст: 'корректно пожалуйста...', Метка: 'answer_feedback'
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Текст: 'верный ответ!...', Метка: 'answer_feedback'
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Текст: 'НЕ ТОТ ВАРИАНТ...', Метка: 'answer_feedback'
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Текст: 'не тот вариант пожалуйста...', Метка: 'answer_feedback'
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Текст: 'пожалуйста да верно...', Метка: 'answer_feedback'
+2025-12-25 19:25:51 - IntentClassifier - INFO - Создание словаря...
+2025-12-25 19:25:51 - IntentClassifier - INFO - Всего слов: 470
+2025-12-25 19:25:51 - IntentClassifier - INFO - Словарь: 472 слов (частота >= 2)
+2025-12-25 19:25:51 - IntentClassifier - INFO - 
+Маппинг классов:
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  0 → 'answer_feedback     ' ( 360 примеров, 7.9%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  1 → 'difficulty          ' ( 574 примеров, 12.6%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  2 → 'goodbye             ' ( 459 примеров, 10.1%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  3 → 'greeting            ' ( 801 примеров, 17.6%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  4 → 'help                ' ( 468 примеров, 10.3%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  5 → 'repeat_quiz         ' ( 338 примеров, 7.4%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  6 → 'start_quiz          ' ( 776 примеров, 17.1%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  7 → 'statistics          ' ( 504 примеров, 11.1%)
+2025-12-25 19:25:51 - IntentClassifier - INFO -   •  8 → 'unknown             ' ( 270 примеров, 5.9%)
+2025-12-25 19:25:51 - IntentClassifier - INFO - 
+Разделение данных:
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Обучающая выборка: 3640 примеров
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Валидационная выборка: 910 примеров
+2025-12-25 19:25:51 - IntentClassifier - INFO - 
+Настройки обучения:
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Устройство: cpu
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Размер словаря: 472
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Количество классов: 9
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Параметры модели: 2,725,642
+2025-12-25 19:25:51 - IntentClassifier - INFO -   Модель успешно инициализирована
+2025-12-25 19:25:51 - IntentClassifier - INFO - Начало обучения...
+2025-12-25 19:25:51 - IntentClassifier - WARNING - Используется старая версия PyTorch
+2025-12-25 19:25:51 - IntentClassifier - INFO - Параметры обучения:
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Количество эпох: 20
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Размер батча: 32
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Размер обучающей выборки: 3640
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Размер валидационной выборки: 910
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Устройство: cpu
+2025-12-25 19:25:51 - IntentClassifier - INFO -   • Детальный лог сохраняется в: training_logs/detailed_training_20251225_192551.csv
+2025-12-25 19:26:01 - IntentClassifier - INFO - Epoch   1/20: Loss=2.5800, Train Acc=14.95%, Val Acc=21.32%, LR=0.000010
+2025-12-25 19:26:01 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192601.pth
+2025-12-25 19:26:01 - IntentClassifier - INFO -   • Точность: 21.32%
+2025-12-25 19:26:01 - IntentClassifier - INFO -   • Эпоха: 1
+2025-12-25 19:26:01 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 21.32%
+2025-12-25 19:26:12 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192612.pth
+2025-12-25 19:26:12 - IntentClassifier - INFO -   • Точность: 28.79%
+2025-12-25 19:26:12 - IntentClassifier - INFO -   • Эпоха: 2
+2025-12-25 19:26:12 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 28.79%
+2025-12-25 19:26:23 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192623.pth
+2025-12-25 19:26:23 - IntentClassifier - INFO -   • Точность: 36.04%
+2025-12-25 19:26:23 - IntentClassifier - INFO -   • Эпоха: 3
+2025-12-25 19:26:23 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 36.04%
+2025-12-25 19:26:34 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192634.pth
+2025-12-25 19:26:34 - IntentClassifier - INFO -   • Точность: 43.63%
+2025-12-25 19:26:34 - IntentClassifier - INFO -   • Эпоха: 4
+2025-12-25 19:26:34 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 43.63%
+2025-12-25 19:26:45 - IntentClassifier - INFO - Epoch   5/20: Loss=2.0421, Train Acc=28.65%, Val Acc=50.00%, LR=0.000010
+2025-12-25 19:26:45 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192645.pth
+2025-12-25 19:26:45 - IntentClassifier - INFO -   • Точность: 50.00%
+2025-12-25 19:26:45 - IntentClassifier - INFO -   • Эпоха: 5
+2025-12-25 19:26:45 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 50.00%
+2025-12-25 19:26:57 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192657.pth
+2025-12-25 19:26:57 - IntentClassifier - INFO -   • Точность: 52.75%
+2025-12-25 19:26:57 - IntentClassifier - INFO -   • Эпоха: 6
+2025-12-25 19:26:57 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 52.75%
+2025-12-25 19:27:08 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192708.pth
+2025-12-25 19:27:08 - IntentClassifier - INFO -   • Точность: 57.69%
+2025-12-25 19:27:08 - IntentClassifier - INFO -   • Эпоха: 7
+2025-12-25 19:27:08 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 57.69%
+2025-12-25 19:27:20 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192720.pth
+2025-12-25 19:27:20 - IntentClassifier - INFO -   • Точность: 59.78%
+2025-12-25 19:27:20 - IntentClassifier - INFO -   • Эпоха: 8
+2025-12-25 19:27:20 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 59.78%
+2025-12-25 19:27:31 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192731.pth
+2025-12-25 19:27:31 - IntentClassifier - INFO -   • Точность: 63.63%
+2025-12-25 19:27:31 - IntentClassifier - INFO -   • Эпоха: 9
+2025-12-25 19:27:31 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 63.63%
+2025-12-25 19:27:42 - IntentClassifier - INFO - Epoch  10/20: Loss=1.6751, Train Acc=42.06%, Val Acc=66.92%, LR=0.000010
+2025-12-25 19:27:42 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192742.pth
+2025-12-25 19:27:42 - IntentClassifier - INFO -   • Точность: 66.92%
+2025-12-25 19:27:42 - IntentClassifier - INFO -   • Эпоха: 10
+2025-12-25 19:27:42 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 66.92%
+2025-12-25 19:27:53 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192753.pth
+2025-12-25 19:27:53 - IntentClassifier - INFO -   • Точность: 68.35%
+2025-12-25 19:27:53 - IntentClassifier - INFO -   • Эпоха: 11
+2025-12-25 19:27:53 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 68.35%
+2025-12-25 19:28:04 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192804.pth
+2025-12-25 19:28:04 - IntentClassifier - INFO -   • Точность: 70.33%
+2025-12-25 19:28:04 - IntentClassifier - INFO -   • Эпоха: 12
+2025-12-25 19:28:04 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 70.33%
+2025-12-25 19:28:14 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192814.pth
+2025-12-25 19:28:14 - IntentClassifier - INFO -   • Точность: 71.87%
+2025-12-25 19:28:14 - IntentClassifier - INFO -   • Эпоха: 13
+2025-12-25 19:28:14 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 71.87%
+2025-12-25 19:28:24 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192824.pth
+2025-12-25 19:28:24 - IntentClassifier - INFO -   • Точность: 73.74%
+2025-12-25 19:28:24 - IntentClassifier - INFO -   • Эпоха: 14
+2025-12-25 19:28:24 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 73.74%
+2025-12-25 19:28:35 - IntentClassifier - INFO - Epoch  15/20: Loss=1.3953, Train Acc=52.45%, Val Acc=74.84%, LR=0.000010
+2025-12-25 19:28:35 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192835.pth
+2025-12-25 19:28:35 - IntentClassifier - INFO -   • Точность: 74.84%
+2025-12-25 19:28:35 - IntentClassifier - INFO -   • Эпоха: 15
+2025-12-25 19:28:35 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 74.84%
+2025-12-25 19:28:45 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192845.pth
+2025-12-25 19:28:45 - IntentClassifier - INFO -   • Точность: 77.80%
+2025-12-25 19:28:45 - IntentClassifier - INFO -   • Эпоха: 16
+2025-12-25 19:28:45 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 77.80%
+2025-12-25 19:29:06 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192906.pth
+2025-12-25 19:29:06 - IntentClassifier - INFO -   • Точность: 80.00%
+2025-12-25 19:29:06 - IntentClassifier - INFO -   • Эпоха: 18
+2025-12-25 19:29:06 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 80.00%
+2025-12-25 19:29:28 - IntentClassifier - INFO - Epoch  20/20: Loss=1.2186, Train Acc=60.71%, Val Acc=81.54%, LR=0.000010
+2025-12-25 19:29:28 - IntentClassifier - INFO - Модель сохранена: model_checkpoints/intent_classifier_20251225_192928.pth
+2025-12-25 19:29:28 - IntentClassifier - INFO -   • Точность: 81.54%
+2025-12-25 19:29:28 - IntentClassifier - INFO -   • Эпоха: 20
+2025-12-25 19:29:28 - IntentClassifier - INFO - Новая лучшая модель сохранена! Точность: 81.54%
+2025-12-25 19:29:28 - IntentClassifier - INFO - Обучение завершено!
+2025-12-25 19:29:28 - IntentClassifier - INFO -   • Лучшая точность: 81.54%
+2025-12-25 19:29:28 - IntentClassifier - INFO -   • Финальная точность: 81.54%
+2025-12-25 19:29:28 - IntentClassifier - INFO -   • Детальный лог обучения: training_logs/detailed_training_20251225_192551.csv
+2025-12-25 19:29:28 - IntentClassifier - INFO - Сводный отчет сохранен: training_logs/training_summary_20251225_192928.txt
+2025-12-25 19:29:28 - IntentClassifier - INFO - Полная оценка модели на валидационной выборке...
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+Детальный отчет о классификации:
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+                 precision    recall  f1-score   support
+
+answer_feedback       0.78      0.64      0.70        72
+     difficulty       0.92      0.85      0.88       115
+        goodbye       0.55      0.90      0.68        92
+       greeting       0.77      0.85      0.81       160
+           help       0.89      0.77      0.82        94
+    repeat_quiz       0.88      0.78      0.83        67
+     start_quiz       0.89      0.90      0.90       155
+     statistics       0.96      0.78      0.86       101
+        unknown       0.97      0.67      0.79        54
+
+       accuracy                           0.82       910
+      macro avg       0.85      0.79      0.81       910
+   weighted avg       0.84      0.82      0.82       910
+
+2025-12-25 19:29:28 - IntentClassifier - INFO - Отчет о классификации сохранен: training_logs/classification_report_20251225_192928.json
+2025-12-25 19:29:28 - IntentClassifier - INFO - Анализ предсказаний модели...
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 1:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [169, 165, 211, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'greeting'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'greeting' (67.30%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'greeting': 67.30%, 'help': 10.93%, 'unknown': 9.78%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 2:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [3, 41, 42, 43, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'difficulty'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'difficulty' (59.01%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'difficulty': 59.01%, 'unknown': 9.67%, 'statistics': 9.36%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 3:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [227, 228, 241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'greeting'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'greeting' (57.09%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'greeting': 57.09%, 'help': 11.20%, 'unknown': 9.33%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 4:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [366, 353, 313, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'start_quiz'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'start_quiz' (36.89%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'start_quiz': 36.89%, 'greeting': 11.52%, 'difficulty': 11.01%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 5:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [161, 162, 118, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'greeting'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'greeting' (81.51%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'greeting': 81.51%, 'unknown': 8.21%, 'answer_feedback': 3.08%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 6:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [3, 59, 260, 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'help'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'help' (38.16%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'help': 38.16%, 'difficulty': 29.55%, 'unknown': 7.54%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 7:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [258, 264, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'help'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'help' (34.28%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'help': 34.28%, 'goodbye': 17.55%, 'difficulty': 10.35%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 8:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [12, 391, 392, 287, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'statistics'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'statistics' (81.84%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'statistics': 81.84%, 'start_quiz': 4.45%, 'unknown': 3.34%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 9:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [3, 165, 163, 206, 6, 164, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'greeting'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'greeting' (68.90%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'greeting': 68.90%, 'help': 15.59%, 'unknown': 8.02%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - 
+   Пример 10:
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Текст: [183, 182, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]...
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Истинная метка: 'greeting'
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Предсказано: 'greeting' (59.79%)
+2025-12-25 19:29:28 - IntentClassifier - INFO -       Топ-3: 'greeting': 59.79%, 'goodbye': 13.67%, 'answer_feedback': 5.49%
+2025-12-25 19:29:28 - IntentClassifier - INFO -       ✓ Правильно
+2025-12-25 19:29:28 - IntentClassifier - INFO - Анализ предсказаний сохранен: training_logs/prediction_analysis_20251225_192928.json
+2025-12-25 19:29:28 - IntentClassifier - INFO - Тестирование модели на конкретных примерах...
+2025-12-25 19:29:28 - IntentClassifier - INFO - Доступные классы: [np.str_('answer_feedback'), np.str_('difficulty'), np.str_('goodbye'), np.str_('greeting'), np.str_('help'), np.str_('repeat_quiz'), np.str_('start_quiz'), np.str_('statistics'), np.str_('unknown')]
+2025-12-25 19:29:28 - IntentClassifier - INFO -   'привет как дела                → 'greeting            ' (idx:  3, conf: 99.70%) ✓
+2025-12-25 19:29:28 - IntentClassifier - INFO -   'привет                         → 'greeting            ' (idx:  3, conf: 98.48%) ✓
+2025-12-25 19:29:28 - IntentClassifier - INFO -   'здравствуйте                   → 'greeting            ' (idx:  3, conf: 89.40%) ✓
+2025-12-25 19:29:28 - IntentClassifier - INFO -   'начать квиз                    → 'start_quiz          ' (idx:  6, conf: 100.00%) ✓
+2025-12-25 19:29:28 - IntentClassifier - INFO -   'хочу начать викторину          → 'start_quiz          ' (idx:  6, conf: 98.94%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'давай сыграем в квиз           → 'start_quiz          ' (idx:  6, conf: 99.80%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'хочу легкий уровень            → 'difficulty          ' (idx:  1, conf: 98.69%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'сложный уровень пожалуйста     → 'difficulty          ' (idx:  1, conf: 98.06%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'покажи статистику              → 'statistics          ' (idx:  7, conf: 55.76%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'хочу увидеть мою статистику    → 'statistics          ' (idx:  7, conf: 36.94%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'помоги мне                     → 'help                ' (idx:  4, conf: 48.20%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'мне нужна помощь               → 'help                ' (idx:  4, conf: 73.53%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'пока                           → 'goodbye             ' (idx:  2, conf: 46.78%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'до свидания                    → 'goodbye             ' (idx:  2, conf: 99.74%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'правильно                      → 'answer_feedback     ' (idx:  0, conf: 87.74%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'неправильно                    → 'help                ' (idx:  4, conf: 47.99%) ✗
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'еще раз                        → 'repeat_quiz         ' (idx:  5, conf: 99.15%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'хочу еще одну попытку          → 'repeat_quiz         ' (idx:  5, conf: 99.87%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'какая погода сегодня           → 'unknown             ' (idx:  8, conf: 79.61%) ✓
+2025-12-25 19:29:29 - IntentClassifier - INFO -   'расскажи шутку                 → 'difficulty          ' (idx:  1, conf: 39.99%) ✗
+2025-12-25 19:29:29 - IntentClassifier - INFO - Точность на тестах: 90.00% (18/20)
+2025-12-25 19:29:30 - IntentClassifier - INFO - Графики обучения сохранены: training_logs/training_plot_20251225_192929.png
+2025-12-25 19:29:31 - IntentClassifier - INFO - 
+======================================================================
+2025-12-25 19:29:31 - IntentClassifier - INFO - ОБУЧЕНИЕ ЗАВЕРШЕНО!
+2025-12-25 19:29:31 - IntentClassifier - INFO - ======================================================================
+2025-12-25 19:29:31 - IntentClassifier - INFO - Сохраненные файлы:
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • intent_classifier.pth - обученная модель
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • model_checkpoints/ - чекпоинты модели
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • training_logs/ - все логи обучения
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • training_results.png - графики обучения
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • confusion_matrix.png - матрица ошибок
+2025-12-25 19:29:31 - IntentClassifier - INFO -   • extended_intents.json - данные для обучения
+2025-12-25 19:29:31 - IntentClassifier - INFO - 
+Модель готова к использованию в боте!
+2025-12-25 19:29:31 - IntentClassifier - INFO - Завершение программы: 2025-12-25 19:29:31
